@@ -1,0 +1,4 @@
+<h1 style="color:red";"color:yellow"> this is world</h1>
+attribute means appliying some thing to the h1 element
+each attribute has property and value pairs .
+ 
