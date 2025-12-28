@@ -1,4 +1,51 @@
 <h1 style="color:red";"color:yellow"> this is world</h1>
 attribute means appliying some thing to the h1 element
 each attribute has property and value pairs .
- 
+ DIFFERENCE BETWEEN CLASS AND ID SELECTOR 
+  <head>
+            <style>
+              .hello
+              {
+                color:red
+              }
+              #id1
+              {
+                color:greenyellow
+              }
+              #id2
+              {
+                color:turquoise
+              }
+            </style>
+    </head>
+    <body>
+     
+        
+      <h1 class = "hello"> this is h1 element</h1>
+      <h2 class = "hello"> this is h2 element</h2>
+      <h3 class = "hello"> this is h3 element </h3>
+
+      <h1 id = "id1"> this is h1 id element</h1>
+      <h2 id="id1"> this is h2 id element</h2>
+      <h3 id ="id1"> this is h3 id element</h3>
+
+
+      <h4 id = "id2"> this is h4 id element</h4>
+      <h6 id = "id2"> this is another id element</h6>
+
+      What YOU expected:
+“All should become greenyellow”
+🧠 What HTML rule says:
+❌ ID must be UNIQUE (only one time)
+So this is WRONG HTML, even though browser still shows color.
+4️⃣ Why browser still applies color? (Important beginner doubt)
+Browsers are forgiving.
+They still apply CSS, BUT:
+⚠️ JavaScript
+⚠️ Screen readers
+⚠️ Real projects
+→ will break or behave wrongly
+So never learn wrong habit
+Use class when many elements need same style.
+Use id only for ONE element.
+    </body>
