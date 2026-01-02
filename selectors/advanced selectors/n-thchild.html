@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+/* mosy important nth-child counts position inside the parent, not the tag type. */
+<style>
+
+
+p:first-child
+{
+color:red;
+}
+p:nth-child(2)
+{
+color:yellow;
+}
+p:nth-child(3)
+{
+    color:blue;
+}
+</style>
+<body>
+    <div>
+  <p>Pen</p>
+  <p>Book</p>
+  <p>Eraser</p>
+</div>
+ <p> is paragaraph </p>
+
+
+ <!-- 
+ n th child  
+Two boxes
+Big box contains:
+Small box
+Paper
+Small box contains:
+Pen
+Book
+Eraser
+BIG BOX
+├── Small box
+│   ├── Pen
+│   ├── Book
+│   └── Eraser
+└── Paper
+box → element
+items → elements inside
+<body>
+  <div>
+    <p>Pen</p>
+    <p>Book</p>
+    <p>Eraser</p>
+  </div>
+
+  <p>is paragraph</p>
+</body>
+BODY
+├── DIV
+│   ├── Pen
+│   ├── Book
+│   └── Eraser
+└── is paragraph
+Inside DIV:
+
+1st child = ?
+2nd child = ?
+3rd child = ?
+
+Inside BODY:
+
+1st child = ?
+2nd child = ? 
+BODY [ always Body is parent ]
+├── DIV  [1 st child  for  body ]
+│   ├── p (Pen) [ 1st child for div]
+│   ├── p (Book) [ 2 nd child for div]
+│   └── p (Eraser)[ 3 rd child for div]
+└── p (is paragraph) [ 2nd child for body ]
+
+Why this matters for nth-child
+
+When CSS sees:
+p:nth-child(3)
+It asks
+“Is this <p> the 3rd child of ITS PARENT?”
+<p>Eraser</p> → YES (3rd child of div)
+<p>is paragraph</p> → NO (it is 2nd child of body)
+nth-child counts position inside the parent, not the tag type.
+-->
+</body>
+</html>
