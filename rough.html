@@ -1,0 +1,75 @@
+<html> 
+ 
+<head> 
+
+    </head>
+
+    <body> 
+              
+
+        <h1> Discount Calculator </h1>
+
+        <form onsubmit="abc(event)"> 
+
+            <label>Enter  the Amount:</label>
+            <input type="number" id="d1"/> <br> 
+            <label> Discount :</label>
+            <input type="number" id="d2" /> <br>
+            <button onclick="final_price()"> Submit</button> 
+
+            </form>
+        
+
+
+
+
+           
+        <script> 
+//         Riya is shopping online and wants to calculate how much money she can save during a sale. She decides to create a discount calculator using JavaScript.
+// Task:
+// Create a webpage that accepts the original price of a product and the discount percentage. When the user clicks the Calculate Discount button, use a JavaScript function to calculate and display the discount amount and final price. 
+
+
+       function abc(e)
+       {
+                e.preventDefault()
+       } 
+          
+       var result 
+       function final_price()
+       { 
+            var amount = document.getElementById("d1").value 
+            var discount = document.getElementById("d2").value  
+            discount = (discount/100) 
+
+            console.log('amount =',amount)
+            console.log("discount =",discount) 
+         
+            result = amount -
+             amount * discount
+        
+            console.log("result =" , result) 
+
+            var nh1 = document.createElement("h1")
+            nh1.innerHTML = " After Applying Discount Final Price is :" + result  
+             
+            var savings = amount - result
+            
+            var nh2 = document.createElement("h1")
+            nh2.innerHTML = "saving are"+ savings
+
+
+            document.body.appendChild(nh1)
+            document.body.appendChild(nh2)
+             
+       }
+
+
+</script>
+
+
+
+
+    </body>
+
+</html>
