@@ -1,48 +1,123 @@
 <html> 
     <head> 
  
-
         <style> 
-        .d1 
+        #nav 
         {
-            border: 2px solid;
+            border:2px solid ;
+            
             
         } 
-        .d1 
-        .d1 #d1:last-child{
-            color: red;
-        }
-        .d2 
-        { 
+        .left 
+        {
             border: 2px solid;
+            display: inline-block;
+        }
+        .right 
+        {
+            border:2px solid;
+            display: inline-block;
+           position:absolute;
+        
+            right: 1px;
+        
         } 
-        .d2 li:last-child{
-            border: 2px solid;
+        .right ul li 
+        {
+            display: inline-block; 
+            padding: 15px;
         }
-
+        #d1 
+        {
+            border: 1px solid;
+            border-radius: 5px;
+           display: inline-block;
+        }
+       
+            body{
+            margin:0px
+            }
+        #head 
+        {
+            border:2px solid
+        } 
+        .part1
+        {
+            border:2px solid;
+            display:inline-block ;
+            margin-top:170px ;
+        }
+        .content 
+        { 
+             padding-left: 50px;
+        }
+        .content button 
+        {
+            border-radius: 15px;
+            width:150px;
+            height: 42px; 
+            background-color: rgb(28, 27, 26);
+            color: whitesmoke;
+        }
+         
         </style>
- 
+
     </head> 
 
 
-    <body> 
+    <body>   
+       
+
+  
+        
+        <div id="nav"> 
+
+            <div class="left">
+                <h1 style ="border:2px solid">Spectrum <span style="color:red;border: 1px solid;">.</span></h1>
+                
+            </div>
+
+            <div class="right">
+                <ul>
+                    <li>Shop</li>
+                    <li>Deatails</li>
+                    <li>About</li> 
+                    <li>
+                        <div id="d1">hello</div>
+                    </li>
+                </ul>
+
+            </div> 
+
+        </div> 
+
+        <div id="head"> 
           
-           <div class="d1"> 
-            <h2> SPECTRUM <span id="d1">.</span></h2>
-           </div> 
+            <div class="part1"> 
+                
 
-           <div class="d2"> 
-            <ul>
-                <li>Shop</li>
-                <li>Details</li>
-                <li>About</li>
-                <li>
-                    <div>
+                <div class="content"> 
 
-                    </div>
-                </li>
-            </ul>
-           </div>
+                    <h6>D R O P 0 4 / O U T N O W</h6> 
+
+                    <h1 style="font-size:80px;">SPECTRUM.26</h1>
+ 
+                    <p>A capsule of street_ready essentials built in full <br>color.No muted tones,no apologies.</p> 
+
+                    <button>Shop the drop</button>
+                </div>
+            </div>
+            <div class = "animation">
+
+            </div>
+
+        </div>
+      
+
+          
+
+          
+          
               
     </body>
 </html>
