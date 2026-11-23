@@ -4,18 +4,39 @@
         <style> 
         #main 
         {
-            border:2px solid
+            border:2px solid ;
+            
+            
         } 
         .left 
         {
             border: 2px solid;
+            display: inline-block;
         }
         .right 
         {
-            border:2px solid
+            border:2px solid;
+            display: inline-block;
+           position:absolute;
+        
+            right: 1px;
+        
+        } 
+        .right ul li 
+        {
+            display: inline-block; 
+            padding: 15px;
+        }
+        #d1 
+        {
+            border: 1px solid;
+            border-radius: 5px;
+           display: inline-block;
         }
        
-            
+            body{
+            margin:0px
+            }
         
          
         </style>
@@ -24,23 +45,33 @@
 
 
     <body>   
+       
 
   
         
         <div id="main"> 
 
             <div class="left">
-                <H1 style ="border:2px solid">Spectrum <span style="color:red;border: 1px solid;">.</span></H1>
+                <h1 style ="border:2px solid">Spectrum <span style="color:red;border: 1px solid;">.</span></h1>
+                
             </div>
 
             <div class="right">
                 <ul>
                     <li>Shop</li>
                     <li>Deatails</li>
-                    <li>About</li>
-                    <div></div>
+                    <li>About</li> 
+                    <li>
+                        <div id="d1">hello</div>
+                    </li>
                 </ul>
-            </div>
+
+                
+
+            </div> 
+
+               
+           
 
         </div>
       
